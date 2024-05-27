@@ -4,7 +4,6 @@ import {IoMdClose} from 'react-icons/io'
 import Header from '../Header'
 
 import SearchVideos from '../SearchVideos'
-
 import CartContext from '../../context/CartContext'
 
 import {

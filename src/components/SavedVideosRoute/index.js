@@ -3,6 +3,7 @@ import Loader from 'react-loader-spinner'
 import {AiFillFire} from 'react-icons/ai'
 import VideoCardTwo from '../VideoCardTwo'
 import CartContext from '../../context/CartContext'
+
 import Header from '../Header'
 import SideBar from '../SideBar'
 

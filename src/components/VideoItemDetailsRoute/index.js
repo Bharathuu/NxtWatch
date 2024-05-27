@@ -1,6 +1,17 @@
 import {Component} from 'react'
 import {RiPlayListAddFill} from 'react-icons/ri'
+import Loader from 'react-loader-spinner'
+import Cookies from 'js-cookie'
+import ReactPlayer from 'react-player'
+import {
+  AiFillLike,
+  AiOutlineDislike,
+  AiOutlineLike,
+  AiFillDislike,
+} from 'react-icons/ai'
+
 import CartContext from '../../context/CartContext'
+
 import Header from '../Header'
 import SideBar from '../SideBar'
 
@@ -42,6 +53,7 @@ class VideoDetails extends Component {
     isLiked: false,
     isDisliked: false,
   }
+
   componentDidMount() {
     this.getVideoDetails()
   }

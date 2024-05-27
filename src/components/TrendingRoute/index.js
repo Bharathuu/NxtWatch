@@ -5,6 +5,7 @@ import {AiFillFire} from 'react-icons/ai'
 import VideoCardTwo from '../VideoCardTwo'
 import Header from '../Header'
 import SideBar from '../SideBar'
+
 import CartContext from '../../context/CartContext'
 
 import {

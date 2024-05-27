@@ -2,7 +2,7 @@ import {Link, withRouter} from 'react-router-dom'
 
 import {BsMoon} from 'react-icons/bs'
 
-import {FiSun} from 'react-icons-fi'
+import {FiSun} from 'react-icons/fi'
 
 import Cookies from 'js-cookie'
 

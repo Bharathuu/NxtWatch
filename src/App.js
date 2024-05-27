@@ -8,10 +8,10 @@ import ProtectedRoute from './components/ProtectedRoute'
 import VideoDetails from './components/VideoItemDetailsRoute'
 import TrendingRoute from './components/TrendingRoute'
 import GamingRoute from './components/GamingRoute'
-import SavedVideosRoute from '../components/SavedVideosRoute'
+import SavedVideosRoute from './components/SavedVideosRoute'
 import CartContext from './context/CartContext'
 
-import './index.css'
+import './App.css'
 
 class App extends Component {
   state = {
@@ -19,11 +19,12 @@ class App extends Component {
     savedVideos: [],
     activeTab: 'HOME',
   }
+
   onChangeTheme = () => {
     this.setState(prev => ({isDarkTheme: !prev.isDarkTheme}))
   }
 
-  addToSaveVideos = VideoDetails => {
+  addToSaveVideos = videoDetails => {
     const {savedVideos} = this.state
     const videoObject = savedVideos.find(each => each.id === videoDetails.id)
 

@@ -31,7 +31,7 @@ class SideBar extends Component {
         const onClickGamingTabItem = () => {
           activeTabItem('GAMING')
         }
-        const onClickSavedVideisTabItem = () => {
+        const onClickSavedVideosTabItem = () => {
           activeTabItem('SAVED VIDEOS')
         }
         const bgColor = isDarkTheme ? '#ffffff' : '#000000'
@@ -133,6 +133,7 @@ class SideBar extends Component {
       }}
     </CartContext.Consumer>
   )
+
   render() {
     return <>{this.renderStatusItems()}</>
   }

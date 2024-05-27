@@ -2,7 +2,7 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {AiOutlineSearch} from 'react-icons/ai'
-import VideoCard from '../VideoItem'
+import VideoItems from '../VideoItems'
 import CartContext from '../../context/CartContext'
 
 import {
@@ -137,6 +137,7 @@ class SearchVideos extends Component {
 
               <button
                 type="button"
+                aria-label="volume"
                 data-testid="searchButton"
                 onClick={this.onClickSearchButton}
               >
@@ -145,7 +146,7 @@ class SearchVideos extends Component {
             </div>
             <VideosContainer>
               {searchedVideos.map(each => (
-                <VideoCard key={each.id} details={each} />
+                <VideoItems key={each.id} details={each} />
               ))}
             </VideosContainer>
           </SearchVideosContainer>
@@ -184,6 +185,7 @@ class SearchVideos extends Component {
         return null
     }
   }
+
   render() {
     return <>{this.renderAllVideos()}</>
   }
